@@ -1,0 +1,10 @@
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+    iframe {
+        width: 100%;
+        max-width: 700px;
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "tasks.autoRunTasks": "on",
+  "[scss]": {
+    "editor.defaultFormatter": "sibikriegstein.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}

@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #faebd7;
+  font-family: "Nunito", sans-serif;
+}
+
+.carousel.slide {
+  max-width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+.carousel.slide .carousel-inner .carousel-item img {
+  width: 100% !important;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 3%;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#galeria {
+  padding: 60px 20px;
+  text-align: center;
+}
+#galeria h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #5c3b1e;
+}
+#galeria .grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+#galeria .grid-galeria img {
+  background-color: #fff;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: ease 0.5s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+#galeria .grid-galeria img:hover {
+  transform: scale(1.03);
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.mapa iframe {
+  width: 100%;
+  max-width: 700px;
+}
+
+#contacto {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+#contacto .contacto-container {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#contacto .contacto-container h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #5c3b1e;
+}
+#contacto .contacto-container p {
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 30px;
+  color: #000;
+}
+#contacto .contacto-container .formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contacto .contacto-container .formulario-contacto input,
+#contacto .contacto-container .formulario-contacto textarea,
+#contacto .contacto-container .formulario-contacto button {
+  width: 100%;
+  box-sizing: border-box;
+}
+#contacto .contacto-container .formulario-contacto input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+#contacto .contacto-container .formulario-contacto input:focus {
+  border-color: #c28b45;
+}
+#contacto .contacto-container .formulario-contacto textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+#contacto .contacto-container .formulario-contacto textarea:focus {
+  border-color: #c28b45;
+}
+#contacto .contacto-container .formulario-contacto button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #c28b45;
+  color: white;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#contacto .contacto-container .formulario-contacto button:hover {
+  background-color: #a56f32;
+}
+
+h2 {
+  color: #5c3b1e;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.navbar {
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: burlywood;
+  margin: 10px;
+  padding: 15px;
+}
+.navbar .navbar-logo {
+  width: 200px;
+  height: auto;
+}
+.navbar .nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.navbar .nav-links a {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: black;
+  background-color: burlywood;
+  font-size: 20px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.navbar .nav-links a:hover {
+  transform: scale(1.05);
+  color: #faebd7;
+}
+
+.historia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.historia p {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  margin: 15px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 50px;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.productos .productos-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  padding: 16px;
+  transition: ease 0.5s;
+}
+.productos .productos-items:hover {
+  transform: scale(1.05);
+}
+.productos .productos-items img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.productos .productos-items small {
+  font-family: "Nunito", sans-serif;
+  margin: 10px;
+  background-color: #fff;
+  color: black;
+  font-size: 20px;
+}
+
+#footer {
+  background-color: #d2691e !important;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+#footer .footer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+#footer .footer-items h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  margin: 10px;
+}
+#footer .footer-items a {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+#footer .footer-items a:hover {
+  transform: scale(1.05);
+  color: goldenrod;
+}
+
+/*# sourceMappingURL=style.css.map */
