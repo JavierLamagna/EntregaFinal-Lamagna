@@ -1,6 +1,7 @@
+@use "../componentes/mixins" as *;
+
 .mapa {
-    display: flex;
-    justify-content: center;
+    @include section-hero(30px, center, null);
     margin: 30px;
 
     iframe {

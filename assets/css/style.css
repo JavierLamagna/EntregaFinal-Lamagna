@@ -1,8 +1,11 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #faebd7;
-  font-family: "Nunito", sans-serif;
+#contacto .contacto-container {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .carousel.slide {
@@ -27,8 +30,9 @@ body {
 #galeria h2 {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #5c3b1e;
+  margin-bottom: 30px;
 }
 #galeria .grid-galeria {
   display: grid;
@@ -51,6 +55,7 @@ body {
 }
 
 .mapa {
+  padding: 30px;
   display: flex;
   justify-content: center;
   margin: 30px;
@@ -64,15 +69,6 @@ body {
   padding: 60px 20px;
   display: flex;
   justify-content: center;
-}
-#contacto .contacto-container {
-  width: 100%;
-  max-width: 600px;
-  background: white;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 #contacto .contacto-container h2 {
   font-family: "Poppins", sans-serif;
@@ -90,13 +86,9 @@ body {
   flex-direction: column;
   gap: 15px;
 }
-#contacto .contacto-container .formulario-contacto input,
-#contacto .contacto-container .formulario-contacto textarea,
-#contacto .contacto-container .formulario-contacto button {
+#contacto .contacto-container .formulario-contacto input {
   width: 100%;
   box-sizing: border-box;
-}
-#contacto .contacto-container .formulario-contacto input {
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -106,9 +98,11 @@ body {
   transition: 0.3s;
 }
 #contacto .contacto-container .formulario-contacto input:focus {
-  border-color: #c28b45;
+  border-color: burlywood;
 }
 #contacto .contacto-container .formulario-contacto textarea {
+  width: 100%;
+  box-sizing: border-box;
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -116,15 +110,19 @@ body {
   font-size: 1rem;
   outline: none;
   transition: 0.3s;
+  min-height: 120px;
+  resize: vertical;
 }
 #contacto .contacto-container .formulario-contacto textarea:focus {
-  border-color: #c28b45;
+  border-color: burlywood;
 }
 #contacto .contacto-container .formulario-contacto button {
+  width: 100%;
+  box-sizing: border-box;
   padding: 15px;
   border: none;
   border-radius: 10px;
-  background-color: #c28b45;
+  background-color: burlywood;
   color: white;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
@@ -132,7 +130,14 @@ body {
   transition: 0.3s;
 }
 #contacto .contacto-container .formulario-contacto button:hover {
-  background-color: #a56f32;
+  background-color: rgb(208.8, 155.6, 87);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #faebd7;
+  font-family: "Nunito", sans-serif;
 }
 
 h2 {

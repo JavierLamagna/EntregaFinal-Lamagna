@@ -1,3 +1,5 @@
+@use "../componentes/mixins" as *;
+
 // Carrucel
 .carousel.slide {
     max-width: 900px;
@@ -25,10 +27,8 @@
     text-align: center;
 
     h2 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 2rem;
+        @include section-title();
         margin-bottom: 30px;
-        color: #5c3b1e;
     }
 
     .grid-galeria {

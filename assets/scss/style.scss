@@ -1,6 +1,7 @@
 @use 'pages/productos' as *;
 @use 'pages/nos_encontraras' as *;
 @use 'pages/contactos' as *;
+@use 'componentes/variables' as *;
 
 // Mixins
 @mixin flex-center {

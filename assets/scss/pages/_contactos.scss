@@ -1,28 +1,17 @@
+@use "../componentes/mixins" as *;
+
 #contacto {
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
+    @include section-hero();
 
     .contacto-container {
-        width: 100%;
-        max-width: 600px;
-        background: white;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-        text-align: center;
+        @extend %card-panel;
 
         h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #5c3b1e;
+            @include section-title();
         }
 
         p {
-            font-family: 'Nunito', sans-serif;
-            margin-bottom: 30px;
-            color: #000;
+            @include text-body();
         }
 
         .formulario-contacto {
@@ -30,56 +19,19 @@
             flex-direction: column;
             gap: 15px;
 
-            input, textarea, button {
-                width: 100%;
-                box-sizing: border-box;
-            }
-
             input {
-                padding: 15px;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                font-family: 'Nunito', sans-serif;
-                font-size: 1rem;
-                outline: none;
-                transition: 0.3s;
-
-                &:focus {
-                    border-color: #c28b45;
-                }
+                @include form-control();
+                @include input-focus();
             }
 
             textarea {
-                padding: 15px;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                font-family: 'Nunito', sans-serif;
-                font-size: 1rem;
-                outline: none;
-                transition: 0.3s;
-
-                min-height: 120px;
+                @include form-control(120px);
                 resize: vertical;
-
-                &:focus {
-                    border-color: #c28b45;
-                }
+                @include input-focus();
             }
 
             button {
-                padding: 15px;
-                border: none;
-                border-radius: 10px;
-                background-color: #c28b45;
-                color: white;
-                font-size: 1rem;
-                font-family: 'Poppins', sans-serif;
-                cursor: pointer;
-                transition: 0.3s;
-
-                &:hover {
-                    background-color: #a56f32;
-                }
+                @include button-primary();
             }
         }
     }

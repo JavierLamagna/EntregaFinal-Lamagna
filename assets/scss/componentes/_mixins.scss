@@ -1,0 +1,82 @@
+@use "sass:color" as color;
+@use "variables" as *;
+
+// Ayudante reusable para el diseño de secciones
+@mixin section-hero($padding: 60px 20px, $justify: center, $align: null) {
+  padding: $padding;
+  display: flex;
+  justify-content: $justify;
+
+  @if $align != null {
+    align-items: $align;
+  }
+}
+
+// Estilo común para títulos de sección
+@mixin section-title($size: 2rem, $margin-bottom: 10px, $color: $color-secundario) {
+  font-family: $fuente-titulos;
+  font-size: $size;
+  margin-bottom: $margin-bottom;
+  color: $color;
+}
+
+// Estilo común para párrafos/texto
+@mixin text-body($margin-bottom: 30px, $color: #000) {
+  font-family: $fuente-texto;
+  margin-bottom: $margin-bottom;
+  color: $color;
+}
+
+// Estilos base para controles de formulario con altura mínima opcional
+@mixin form-control($min-height: null) {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: $fuente-texto;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+
+  @if $min-height != null {
+    min-height: $min-height;
+  }
+}
+
+// Estilo para focus de input/textarea
+@mixin input-focus($color: $color-principal) {
+  &:focus {
+    border-color: $color;
+  }
+}
+
+// Estilo principal para botones
+@mixin button-primary($bg: $color-principal, $color: white, $hover-darken: 12%) {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: $bg;
+  color: $color;
+  font-size: 1rem;
+  font-family: $fuente-titulos;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: color.adjust($bg, $lightness: -$hover-darken);
+  }
+}
+
+// Estilo reutilizable para contenedores tipo tarjeta
+%card-panel {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
