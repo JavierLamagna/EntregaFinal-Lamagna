@@ -1,17 +1,17 @@
 @use "../componentes/mixins" as *;
 
 #contacto {
-    @include section-hero();
+    @include flex-centro;
 
     .contacto-container {
-        @extend %card-panel;
+        @extend %tarjeta;
 
         h2 {
-            @include section-title();
+            @include titulo;
         }
 
         p {
-            @include text-body();
+            @include parrafo;
         }
 
         .formulario-contacto {
@@ -20,18 +20,17 @@
             gap: 15px;
 
             input {
-                @include form-control();
-                @include input-focus();
+                @include campo-formulario;
             }
 
             textarea {
-                @include form-control(120px);
+                @include campo-formulario;
+                min-height: 120px;
                 resize: vertical;
-                @include input-focus();
             }
 
             button {
-                @include button-primary();
+                @include boton;
             }
         }
     }

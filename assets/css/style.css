@@ -30,8 +30,8 @@
 #galeria h2 {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
-  margin-bottom: 10px;
   color: #5c3b1e;
+  margin-bottom: 10px;
   margin-bottom: 30px;
 }
 #galeria .grid-galeria {
@@ -55,10 +55,10 @@
 }
 
 .mapa {
-  padding: 30px;
   display: flex;
   justify-content: center;
   margin: 30px;
+  padding: 0;
 }
 .mapa iframe {
   width: 100%;
@@ -66,20 +66,20 @@
 }
 
 #contacto {
-  padding: 60px 20px;
   display: flex;
   justify-content: center;
+  padding: 60px 20px;
 }
 #contacto .contacto-container h2 {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
-  margin-bottom: 10px;
   color: #5c3b1e;
+  margin-bottom: 10px;
 }
 #contacto .contacto-container p {
   font-family: "Nunito", sans-serif;
-  margin-bottom: 30px;
   color: #000;
+  margin-bottom: 30px;
 }
 #contacto .contacto-container .formulario-contacto {
   display: flex;
@@ -110,11 +110,13 @@
   font-size: 1rem;
   outline: none;
   transition: 0.3s;
-  min-height: 120px;
-  resize: vertical;
 }
 #contacto .contacto-container .formulario-contacto textarea:focus {
   border-color: burlywood;
+}
+#contacto .contacto-container .formulario-contacto textarea {
+  min-height: 120px;
+  resize: vertical;
 }
 #contacto .contacto-container .formulario-contacto button {
   width: 100%;
@@ -133,6 +135,174 @@
   background-color: rgb(208.8, 155.6, 87);
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    margin: 5px;
+    padding: 10px;
+  }
+  .navbar .navbar-logo {
+    width: 150px;
+  }
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .navbar .nav-links a {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+  h2 {
+    font-size: 24px;
+    margin: 15px;
+  }
+  .historia p {
+    font-size: 16px;
+    padding: 40px 10px;
+    margin: 10px;
+  }
+  #galeria .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 10px;
+  }
+  .carousel.slide {
+    padding: 0 20px;
+    height: 300px;
+    max-width: 100%;
+  }
+  .carousel.slide .carousel-inner .carousel-item img {
+    height: 300px;
+  }
+  .productos {
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+  }
+  .productos .productos-items {
+    width: 100%;
+    max-width: 280px;
+  }
+  #contacto .contacto-container {
+    max-width: 90%;
+    padding: 25px;
+  }
+  #footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #footer .footer-items {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .mapa iframe {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px;
+    margin: 5px;
+  }
+  .navbar .navbar-logo {
+    width: 120px;
+  }
+  .navbar .nav-links {
+    gap: 5px;
+  }
+  .navbar .nav-links a {
+    font-size: 14px;
+    padding: 8px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 10px 5px;
+  }
+  .historia p {
+    font-size: 14px;
+    padding: 30px 10px;
+    margin: 5px;
+  }
+  #galeria .grid-galeria {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  #galeria h2 {
+    margin-bottom: 20px;
+  }
+  .carousel.slide {
+    padding: 0 10px;
+    height: 250px;
+    max-width: 100%;
+    margin: 0;
+  }
+  .carousel.slide .carousel-inner .carousel-item img {
+    height: 250px;
+  }
+  .productos {
+    margin: 10px;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productos .productos-items {
+    width: 100%;
+    max-width: 250px;
+  }
+  #contacto {
+    padding: 30px 10px;
+  }
+  #contacto .contacto-container {
+    max-width: 95%;
+    padding: 20px;
+  }
+  #contacto .contacto-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #contacto .contacto-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  #contacto .contacto-container .formulario-contacto {
+    gap: 10px;
+  }
+  #contacto .contacto-container .formulario-contacto input,
+  #contacto .contacto-container .formulario-contacto textarea,
+  #contacto .contacto-container .formulario-contacto button {
+    font-size: 16px;
+    padding: 12px;
+  }
+  #contacto .contacto-container .formulario-contacto textarea {
+    min-height: 100px;
+  }
+  #footer {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+  #footer .footer-items {
+    margin: 10px 0;
+  }
+  #footer .footer-items h3 {
+    font-size: 18px;
+    margin: 5px;
+  }
+  #footer .footer-items a {
+    font-size: 14px;
+  }
+  .mapa {
+    margin: 15px;
+    padding: 0;
+  }
+  .mapa iframe {
+    max-width: 100%;
+  }
+}
 body {
   margin: 0;
   padding: 0;

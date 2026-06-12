@@ -1,0 +1,230 @@
+// Archivo de media queries para responsividad
+// Breakpoints simples para dispositivos
+
+// Tablets - 768px y menos
+@media (max-width: 768px) {
+  // Navbar
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    margin: 5px;
+    padding: 10px;
+
+    .navbar-logo {
+      width: 150px;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+
+      a {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  // Título h2
+  h2 {
+    font-size: 24px;
+    margin: 15px;
+  }
+
+  // Historia
+  .historia p {
+    font-size: 16px;
+    padding: 40px 10px;
+    margin: 10px;
+  }
+
+  // Galería de productos - de 3 a 2 columnas
+  #galeria .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  // Carrusel
+  .carousel.slide {
+    padding: 0 20px;
+    height: 300px;
+    max-width: 100%;
+
+    .carousel-inner .carousel-item img {
+      height: 300px;
+    }
+  }
+
+  // Productos items - de ancho fijo a flexible
+  .productos {
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+
+    .productos-items {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+
+  // Contacto container
+  #contacto .contacto-container {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  // Footer
+  #footer {
+    flex-direction: column;
+    gap: 20px;
+
+    .footer-items {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  // Mapa
+  .mapa iframe {
+    max-width: 100%;
+  }
+}
+
+// Móviles - 480px y menos
+@media (max-width: 480px) {
+  // Navbar
+  .navbar {
+    padding: 8px;
+    margin: 5px;
+
+    .navbar-logo {
+      width: 120px;
+    }
+
+    .nav-links {
+      gap: 5px;
+
+      a {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+  }
+
+  // Títulos
+  h2 {
+    font-size: 20px;
+    margin: 10px 5px;
+  }
+
+  // Historia
+  .historia p {
+    font-size: 14px;
+    padding: 30px 10px;
+    margin: 5px;
+  }
+
+  // Galería de productos - 1 columna
+  #galeria .grid-galeria {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  #galeria h2 {
+    margin-bottom: 20px;
+  }
+
+  // Carrusel
+  .carousel.slide {
+    padding: 0 10px;
+    height: 250px;
+    max-width: 100%;
+    margin: 0;
+
+    .carousel-inner .carousel-item img {
+      height: 250px;
+    }
+  }
+
+  // Productos items - 1 columna
+  .productos {
+    margin: 10px;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+
+    .productos-items {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+
+  // Contacto container
+  #contacto {
+    padding: 30px 10px;
+
+    .contacto-container {
+      max-width: 95%;
+      padding: 20px;
+
+      h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .formulario-contacto {
+        gap: 10px;
+
+        input,
+        textarea,
+        button {
+          font-size: 16px;
+          padding: 12px;
+        }
+
+        textarea {
+          min-height: 100px;
+        }
+      }
+    }
+  }
+
+  // Footer
+  #footer {
+    flex-direction: column;
+    padding: 15px 0;
+
+    .footer-items {
+      margin: 10px 0;
+
+      h3 {
+        font-size: 18px;
+        margin: 5px;
+      }
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // Mapa
+  .mapa {
+    margin: 15px;
+    padding: 0;
+
+    iframe {
+      max-width: 100%;
+    }
+  }
+}
