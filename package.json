@@ -1,13 +1,15 @@
 {
   "name": "lamagna-proyecto",
   "version": "1.0.0",
-  "description": "Proyecto Pre-Entrega Lamagna",
+  "description": "Proyecto Final - Panadería Los 5 Hermanos - CoderHouse Desarrollo Web",
   "main": "index.html",
+  "homepage": "https://javierlamagna.github.io/EntregaFinal-Lamagna/",
   "scripts": {
-    "sass": "sass --watch assets/scss:assets/css"
+    "sass": "sass --watch assets/scss/style.scss:assets/css/style.css",
+    "sass:build": "sass assets/scss/style.scss assets/css/style.css"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["panaderia", "coderhouse", "desarrollo-web", "sass", "github-pages"],
+  "author": "Javier Lamagna",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.77.0"
